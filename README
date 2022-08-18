@@ -8,17 +8,17 @@ contact Dr.Sun: tombow.bioinfo@gmail.com
 Usage:
 cd TelFinder-main/
 
-Q:check the parameters and its meanings
+#:check the parameters and its meanings
 python3 TelFinder -h
 
-Q:format=fasta,
+#:format=fasta,
 python3 TelFinder -f fa -inf example/fasta/NCR_genomic.fna -s NCR -o example/fasta -e five
 python3 TelFinder -f fa -inf example/fasta/NCR_genomic.fna -s NCR -o example/fasta -e three
 
-Q:format=fastq,
+#:format=fastq,
 python3 TelFinder -f fq -inf example/fastq/test.genomic.fastq -s test -o example/fastq
 
-Q:varaition analysis, format=kmer
+#:varaition analysis, format=kmer
 python3 TelFinder -f kmer -inf example/fasta/ara_five_info -m TTAGGG -o example/fasta -e five
 
 
