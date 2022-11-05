@@ -12,8 +12,11 @@ Q:check the parameters and its meanings
 python3 TelFinder -h
 
 Q:format=fasta,
-python3 TelFinder -f fa -inf example/NCR.fna -s NCR -o example/fasta -e five
-python3 TelFinder -f fa -inf example/NCR.fna -s NCR -o example/fasta -e three
+python3 TelFinder -f fa -inf example/fasta/NCR.fna -s NCR -o example/fasta/fasta -e five
+python3 TelFinder -f fa -inf example/fasta/NCR.fna -s NCR -o example/fasta/fasta -e three
+
+Q:fasta=fastq
+python3 TelFinder -f fq inf
 
 Q:varaition analysis, format=kmer
 python3 TelFinder -f kmer -inf example/NCR_five_info -m TTAGGG -o example/ -e five
