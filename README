@@ -9,17 +9,17 @@ Usage:
 cd TelFinder-main/
 
 Q:check the parameters and its meanings
-python3 TelFinder -h
+python3 TelFinder.py -h
 
 Q:format=fasta
-python3 TelFinder -f fa -inf example/fasta/NCR.fna -s NCR -o example/fasta -e five
-python3 TelFinder -f fa -inf example/fasta/NCR.fna -s NCR -o example/fasta -e three
+python3 TelFinder.py -f fa -inf example/fasta/NCR.fna -s NCR -o example/fasta -e five
+python3 TelFinder.py -f fa -inf example/fasta/NCR.fna -s NCR -o example/fasta -e three
 
 Q:format=fastq(single)
-python3 TelFinder -f fq1 -inf example/fastq/DD.fastq -ref example/fastq/AFM_genomic.fna -o example/fastq/ -s AFMfq -t 80
+python3 TelFinder.py -f fq1 -inf example/fastq/DD.fastq -ref example/fastq/AFM_genomic.fna -o example/fastq/ -s AFMfq -t 80
 
 Q:format=fastq(paired)
-python3 TelFinder -f fq2 -1 example/fastq/DRR237583_1.fastq -2 example/fastq/DRR237583_2.fastaq -ref example/fastq/AFM_genomic.fna -o example/fastq/ -s AFMfq -t 80
+python3 TelFinder.py -f fq2 -1 example/fastq/DRR237583_1.fastq -2 example/fastq/DRR237583_2.fastaq -ref example/fastq/AFM_genomic.fna -o example/fastq/ -s AFMfq -t 80
 
 Q:varaition analysis, format=kmer
 python3 TelFinder.py -f kmer -inf example/fasta/NCR.fna -m CCCTAA -o example/fasta/ -s NCR -e five
