@@ -1,2 +1,8 @@
-download DRR237583.sra
-download AFM_genomic.fna
+#as the reads data is too big, so please download the example reads data as follows
+#download DRR237583.sra in this dictionary
+wget https://sra-pub-run-odp.s3.amazonaws.com/sra/DRR237583/DRR237583
+mv DRR237583 DRR237583.sra
+#decompress sra file
+fastq-dump --split-3 DRR237583.sra
+#then you can detect telomeric sequences from the data;
+#if you have any question, please no hesitate to contact me.
