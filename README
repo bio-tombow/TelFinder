@@ -1,0 +1,32 @@
+------------------------------------------------------
+TelFinder: a program for de novo detection of telomeric motif sequence
+python3 is needed
+If you have any problem in using the program, please no hesitate to 
+contact Dr.Sun: tombow.bioinfo@gmail.com
+------------------------------------------------------
+
+Usage:
+cd TelFinder-main/
+
+Q:check the parameters and its meanings
+python3 TelFinder.py -h
+
+Q:format=fasta
+python3 TelFinder.py -f fa -inf example/fasta/NCR.fna -s NCR -o example/fasta -e left
+python3 TelFinder.py -f fa -inf example/fasta/NCR.fna -s NCR -o example/fasta -e right
+
+Q:format=fastq(single)
+python3 TelFinder.py -f fq1 -inf example/fastq/DD.fastq -ref example/fastq/AFM_genomic.fna -o example/fastq/ -s AFMfq -t 80
+
+Q:format=fastq(paired)
+python3 TelFinder.py -f fq2 -1 example/fastq/DRR237583_1.fastq -2 example/fastq/DRR237583_2.fastaq -ref example/fastq/AFM_genomic.fna -o example/fastq/ -s AFMfq -t 80
+
+Q:varaition analysis, format=kmer_fa
+python3 TelFinder.py -f kmer_fa -inf example/fasta/NCR.fna -m CCCTAA -o example/fasta/ -s NCR -e left
+
+Q:varaition analysis, format=kmer_fq1
+python3 TelFinder.py -f kmer_fq1 -inf example/fastq/DD.fastq -ref example/fastq/AFM_genomic.fna -m CCCTAA -o example/fasta/ -s AFMfq -e left
+
+Q:varaition analysis, format=kmer_fq2
+python3 TelFinder.py -f kmer_fq2 -1 example/fastq/DRR237583_1.fastq -2 example/fastq/DRR237583_2.fastaq -ref example/fastq/AFM_genomic.fna -m CCCTAA -o example/fasta/ -s AFMfq -e left
+
