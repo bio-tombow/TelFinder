@@ -28,5 +28,7 @@ Q:varaition analysis, format=kmer_fq1
 python3 TelFinder.py -f kmer_fq1 -inf example/fastq/DD.fastq -ref example/fastq/AFM_genomic.fna -m CCCTAA -o example/fasta/ -s AFMfq -e left
 
 Q:varaition analysis, format=kmer_fq2
-python3 TelFinder.py -f kmer_fq2 -1 example/fastq/DRR237583_1.fastq -2 example/fastq/DRR237583_2.fastaq -ref example/fastq/AFM_genomic.fna -m CCCTAA -o example/fasta/ -s AFMfq -e left
+python3 TelFinder.py -f kmer_fq2 -1 example/fastq/DRR237583_1.fastq -2 example/fastq/DRR237583_2.fastq -ref example/fastq/AFM_genomic.fna -m CCCTAA -o example/fasta/ -s AFMfq -e left
 
+If you use the TelFinder in a publication or web page, please cite the following paper:
+Sun, Q., Wang, H., Tao, S., & Xi, X. (2023). Large-Scale Detection of Telomeric Motif Sequences in Genomic Data Using TelFinder. Microbiology spectrum, 11(2), e0392822. Advance online publication. https://doi.org/10.1128/spectrum.03928-22
