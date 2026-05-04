@@ -4,7 +4,11 @@ python3 is needed
 If you have any problem in using the program, please no hesitate to 
 contact Dr.Sun: tombow.bioinfo@gmail.com
 ------------------------------------------------------
-
+## License
+TelFinder is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0).
+Copyright (C) 2022-2026 bio-tombow.
+This means that users may use, modify, and redistribute this software under the terms of the AGPL-3.0. If modified versions are distributed or made available as a network service, the corresponding source code must also be made available under the same license.
+------------------------------------------------------
 Usage:
 cd TelFinder-main/
 
